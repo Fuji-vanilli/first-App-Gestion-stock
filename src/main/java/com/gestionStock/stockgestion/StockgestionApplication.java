@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class StockgestionApplication {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(StockgestionApplication.class, args);
 	}
 
