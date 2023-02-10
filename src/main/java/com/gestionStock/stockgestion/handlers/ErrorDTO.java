@@ -1,6 +1,6 @@
-package com.gestionServer.gestionServer.handlers;
+package com.gestionStock.stockgestion.handlers;
 
-import com.gestionServer.gestionServer.exceptions.ErrorCode;
+import com.gestionStock.stockgestion.exceptions.ErrorCode;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

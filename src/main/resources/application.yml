@@ -12,3 +12,8 @@ spring:
         format_sql: true
     show-sql: true
 
+flickr:
+  apiKeys: cedc9549140db37eb59b27d51e2782d4
+  apiSecret: 18fde413460fb56f
+
+

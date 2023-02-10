@@ -1,10 +1,10 @@
-package com.gestionServer.gestionServer.models;
+package com.gestionStock.stockgestion.models;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
+import jakarta.persistence.OneToMany;
 import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.OneToMany;
 import java.util.List;
 
 @Data

@@ -1,4 +1,4 @@
-package com.gestionServer.gestionServer.models;
+package com.gestionStock.stockgestion.models;
 
 public enum TypeMvtStock {
     ENTREE,

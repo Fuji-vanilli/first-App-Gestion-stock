@@ -1,7 +1,7 @@
-package com.gestionServer.gestionServer.DTOs;
+package com.gestionStock.stockgestion.DTOs;
 
-import com.gestionServer.gestionServer.models.Client;
-import com.gestionServer.gestionServer.models.CommandClient;
+import com.gestionStock.stockgestion.models.Client;
+import com.gestionStock.stockgestion.models.CommandClient;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

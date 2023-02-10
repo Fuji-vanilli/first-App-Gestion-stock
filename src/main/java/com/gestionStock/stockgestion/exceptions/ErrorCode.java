@@ -1,4 +1,4 @@
-package com.gestionServer.gestionServer.exceptions;
+package com.gestionStock.stockgestion.exceptions;
 
 public enum ErrorCode {
 
@@ -42,7 +42,10 @@ public enum ErrorCode {
     USER_NOT_VALID(13001),
 
     VENTE_NOT_FOUND(14000),
-    VENTE_NOT_VALID(14001);
+    VENTE_NOT_VALID(14001),
+
+    COMMAND_FOURNISSEUR_NOT_FOUND(15000),
+    COMMAND_FOURNISSEUR_NOT_VALID(15000);
 
     private int code;
 

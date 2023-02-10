@@ -1,6 +1,6 @@
-package com.gestionServer.gestionServer.repositories;
+package com.gestionStock.stockgestion.repositories;
 
-import com.gestionServer.gestionServer.models.LigneCommandFournisseur;
+import com.gestionStock.stockgestion.models.LigneCommandFournisseur;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,6 +1,6 @@
-package com.gestionServer.gestionServer.validators;
+package com.gestionStock.stockgestion.validators;
 
-import com.gestionServer.gestionServer.DTOs.ArticleDTO;
+import com.gestionStock.stockgestion.DTOs.ArticleDTO;
 import org.springframework.util.StringUtils;
 
 import java.util.ArrayList;

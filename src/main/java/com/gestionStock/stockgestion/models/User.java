@@ -1,12 +1,11 @@
-package com.gestionServer.gestionServer.models;
+package com.gestionStock.stockgestion.models;
 
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
-import javax.management.relation.Role;
-import javax.persistence.*;
 import java.time.Instant;
 import java.util.List;
 

@@ -1,8 +1,8 @@
-package com.gestionServer.gestionServer.models;
+package com.gestionStock.stockgestion.models;
 
+import jakarta.persistence.Embeddable;
 import lombok.*;
 
-import javax.persistence.Embeddable;
 
 @Data
 @AllArgsConstructor @NoArgsConstructor

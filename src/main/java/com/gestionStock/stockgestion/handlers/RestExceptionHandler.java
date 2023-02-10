@@ -1,7 +1,7 @@
-package com.gestionServer.gestionServer.handlers;
+package com.gestionStock.stockgestion.handlers;
 
-import com.gestionServer.gestionServer.exceptions.EntityNotFoundException;
-import com.gestionServer.gestionServer.exceptions.InvalidEntityException;
+import com.gestionStock.stockgestion.exceptions.EntityNotFoundException;
+import com.gestionStock.stockgestion.exceptions.InvalidEntityException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;

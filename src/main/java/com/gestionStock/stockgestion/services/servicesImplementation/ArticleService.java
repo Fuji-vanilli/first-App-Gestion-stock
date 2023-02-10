@@ -1,22 +1,22 @@
-package com.gestionServer.gestionServer.services.servicesImplementation;
+package com.gestionStock.stockgestion.services.servicesImplementation;
 
-import com.gestionServer.gestionServer.DTOs.ArticleDTO;
-import com.gestionServer.gestionServer.exceptions.EntityNotFoundException;
-import com.gestionServer.gestionServer.exceptions.ErrorCode;
-import com.gestionServer.gestionServer.exceptions.InvalidEntityException;
-import com.gestionServer.gestionServer.models.Article;
-import com.gestionServer.gestionServer.repositories.ArticleRepository;
-import com.gestionServer.gestionServer.services.IArticleService;
-import com.gestionServer.gestionServer.validators.ArticleValidator;
+import com.gestionStock.stockgestion.DTOs.ArticleDTO;
+import com.gestionStock.stockgestion.exceptions.EntityNotFoundException;
+import com.gestionStock.stockgestion.exceptions.ErrorCode;
+import com.gestionStock.stockgestion.exceptions.InvalidEntityException;
+import com.gestionStock.stockgestion.models.Article;
+import com.gestionStock.stockgestion.repositories.ArticleRepository;
+import com.gestionStock.stockgestion.services.businessService.IArticleService;
+import com.gestionStock.stockgestion.validators.ArticleValidator;
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import net.bytebuddy.implementation.bytecode.Throw;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
-import javax.transaction.Transactional;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 @Transactional
@@ -51,7 +51,7 @@ public class ArticleService implements IArticleService {
             return null;
         }
 
-        Optional<Article> article= articleRepository.findByArticleByCode(code);
+        Optional<Article> article= articleRepository.findByCodeArticle(code);
 
         return Optional.of(ArticleDTO.fromEntityArticle(article.get()))
                 .orElseThrow(()->
@@ -62,7 +62,7 @@ public class ArticleService implements IArticleService {
     }
 
     @Override
-    public ArticleDTO save(ArticleDTO articleDTO) {
+    public ArticleDTO create(ArticleDTO articleDTO) {
         List<String> errors= ArticleValidator.validate(articleDTO);
 
         if(!errors.isEmpty()){
@@ -79,11 +79,19 @@ public class ArticleService implements IArticleService {
 
     @Override
     public List<ArticleDTO> getAll() {
-        return null;
+
+        return articleRepository.findAll()
+                .stream().map(ArticleDTO::fromEntityArticle)
+                .collect(Collectors.toList());
     }
 
     @Override
     public boolean delete(Integer id) {
-        return false;
+        if(id== null){
+            log.error("The id of the article is null");
+            return false;
+        }
+        articleRepository.deleteById(id);
+        return true;
     }
 }

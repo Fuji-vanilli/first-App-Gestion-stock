@@ -1,4 +1,4 @@
-package com.gestionServer.gestionServer.exceptions;
+package com.gestionStock.stockgestion.exceptions;
 
 import lombok.Getter;
 

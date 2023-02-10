@@ -1,8 +1,8 @@
-package com.gestionServer.gestionServer.DTOs;
+package com.gestionStock.stockgestion.DTOs;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-import com.gestionServer.gestionServer.models.Category;
+import com.gestionStock.stockgestion.models.Category;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
