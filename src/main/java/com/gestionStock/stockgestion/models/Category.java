@@ -17,8 +17,8 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Category {
-    private String id;
+public class Category extends AbstractEntity {
+
     private String name;
 
     @OneToMany(mappedBy = "category", fetch = FetchType.LAZY)

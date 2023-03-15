@@ -6,6 +6,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.sql.Date;
 import java.util.List;
 
 @Entity
@@ -14,22 +15,24 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Customer extends AbstractEntity{
+public class Users extends AbstractEntity{
 
     private String firstname;
 
     private String lastname;
 
-    @Embedded
-    private Adress adress;
-
-    private String picture;
+    private Date dateOfBirth;
 
     private String email;
 
-    private String tel;
+    private String picture;
 
-    @OneToMany(mappedBy = "customer", fetch = FetchType.LAZY)
-    private List<CommandCustomer> commandCustomers;
+    private String password;
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    private Entreprise entreprise;
+
+    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
+    @JoinColumn(name = "idRoles", referencedColumnName = "id")
+    private List<Roles> roles;
 }

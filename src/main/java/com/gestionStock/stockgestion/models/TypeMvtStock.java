@@ -1,4 +1,6 @@
 package com.gestionStock.stockgestion.models;
 
-public class EntrepriseUser {
+public enum TypeMvtStock {
+    ENTRY,
+    EXIT
 }
