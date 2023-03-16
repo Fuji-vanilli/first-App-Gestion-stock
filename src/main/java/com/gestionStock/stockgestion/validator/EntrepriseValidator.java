@@ -9,7 +9,7 @@ import org.springframework.util.StringUtils;
 import java.util.ArrayList;
 import java.util.List;
 
-@AllArgsConstructor @NoArgsConstructor
+
 public class EntrepriseValidator {
 
     public List<String> validate(EntrepriseRequest entrepriseRequest){

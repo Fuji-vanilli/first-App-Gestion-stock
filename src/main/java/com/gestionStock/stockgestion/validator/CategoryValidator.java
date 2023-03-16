@@ -8,7 +8,6 @@ import org.springframework.util.StringUtils;
 import java.util.ArrayList;
 import java.util.List;
 
-@AllArgsConstructor @NoArgsConstructor
 public class CategoryValidator {
 
     public List<String> validate(CategoryRequest categoryRequest){

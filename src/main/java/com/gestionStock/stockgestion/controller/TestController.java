@@ -23,7 +23,7 @@ public class TestController {
     public ResponseEntity<String> create(@RequestBody ArticleRequest articleRequest){
         articleService.create(articleRequest);
 
-        return new ResponseEntity<>(HttpStatus.CREATED);
+        return new ResponseEntity<>("request ok", HttpStatus.CREATED);
     }
 
 }

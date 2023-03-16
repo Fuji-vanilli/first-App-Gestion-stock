@@ -9,7 +9,6 @@ import org.springframework.util.StringUtils;
 import java.util.ArrayList;
 import java.util.List;
 
-@AllArgsConstructor @NoArgsConstructor
 public class ArticleValidator {
 
     public List<String> validate(ArticleRequest articleRequest){
