@@ -6,6 +6,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
+
 @Entity
 //@EqualsAndHashCode(callSuper = false)
 @Data
@@ -13,6 +15,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder
 public class LineCommandProvider extends AbstractEntity{
+
+    private BigDecimal quantity;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "idArticles", referencedColumnName = "id")

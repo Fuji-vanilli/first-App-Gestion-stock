@@ -1,6 +1,7 @@
 package com.gestionStock.stockgestion.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import jakarta.persistence.Column;
 import jakarta.persistence.EntityListeners;
 import jakarta.persistence.Id;
 import jakarta.persistence.MappedSuperclass;
@@ -20,10 +21,13 @@ public class AbstractEntity implements Serializable {
     private String id;
 
     @CreatedDate
+    @Column(insertable = false, updatable = false, name = "createdDate", nullable = false)
     @JsonIgnore
-    private Instant dateCreation;
+    private Instant dateCreated;
 
     @LastModifiedDate
+    @Column(insertable = false, updatable = false, name = "lastModifiedDate")
     @JsonIgnore
     private Instant lastModifiedDate;
+
 }

@@ -1,6 +1,7 @@
 package com.gestionStock.stockgestion.DTOs.request;
 
 import com.gestionStock.stockgestion.DTOs.response.ArticleResponse;
+import com.gestionStock.stockgestion.DTOs.response.SaleResponse;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

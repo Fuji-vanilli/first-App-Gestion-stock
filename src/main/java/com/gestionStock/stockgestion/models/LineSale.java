@@ -6,6 +6,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 @Entity
@@ -15,6 +16,8 @@ import java.util.List;
 @NoArgsConstructor
 @Builder
 public class LineSale extends AbstractEntity{
+
+    private BigDecimal quantity;
 
     @ManyToOne(fetch = FetchType.LAZY)
     private Articles articles;

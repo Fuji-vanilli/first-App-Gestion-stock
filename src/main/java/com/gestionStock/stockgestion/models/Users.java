@@ -33,6 +33,5 @@ public class Users extends AbstractEntity{
     private Entreprise entreprise;
 
     @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
-    @JoinColumn(name = "idRoles", referencedColumnName = "id")
     private List<Roles> roles;
 }

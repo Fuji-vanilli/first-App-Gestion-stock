@@ -1,6 +1,10 @@
 package com.gestionStock.stockgestion.models;
 
-import jakarta.persistence.*;
+
+import jakarta.persistence.Embedded;
+import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
+import jakarta.persistence.OneToMany;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -32,3 +36,4 @@ public class Provider extends AbstractEntity{
     @OneToMany(mappedBy = "provider", fetch = FetchType.LAZY)
     private List<CommandProvider> providers;
 }
+

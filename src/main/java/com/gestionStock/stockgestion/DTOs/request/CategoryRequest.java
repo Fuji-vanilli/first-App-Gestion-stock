@@ -19,7 +19,7 @@ public class CategoryRequest {
 
     private String code;
 
-    private String designation;
+    private String name;
 
     @JsonIgnore
     private List<ArticleResponse> articles;

@@ -2,6 +2,7 @@ package com.gestionStock.stockgestion.DTOs.request;
 
 
 import com.gestionStock.stockgestion.DTOs.response.LineCommandProviderResponse;
+import com.gestionStock.stockgestion.DTOs.response.ProviderResponse;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
