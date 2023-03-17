@@ -21,6 +21,7 @@ import org.springframework.util.StringUtils;
 import javax.swing.text.html.Option;
 import java.util.List;
 import java.util.Optional;
+import java.util.UUID;
 import java.util.stream.Collectors;
 
 @Service
@@ -42,6 +43,7 @@ public class CategoryServiceImpl implements CategoryService {
         }
 
         Category category= categoryMapping.categoryRequestToCategory(categoryRequest);
+        category.setId(UUID.randomUUID().toString());
 
         return categoryMapping.categoryToCategoryResponse(
                 categoryRepository.save(category)
