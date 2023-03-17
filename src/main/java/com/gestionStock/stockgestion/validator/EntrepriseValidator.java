@@ -12,7 +12,7 @@ import java.util.List;
 
 public class EntrepriseValidator {
 
-    public List<String> validate(EntrepriseRequest entrepriseRequest){
+    public static List<String> validate(EntrepriseRequest entrepriseRequest){
         List<String> errors= new ArrayList<>();
 
         if(entrepriseRequest == null || !StringUtils.hasLength(entrepriseRequest.getName())){

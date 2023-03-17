@@ -8,7 +8,7 @@ import java.util.List;
 
 public class SaleValidator {
 
-    public List<String> validate(SaleRequest saleRequest){
+    public static List<String> validate(SaleRequest saleRequest){
         List<String> errors= new ArrayList<>();
 
         if(saleRequest == null || !StringUtils.hasLength(saleRequest.getCode())){

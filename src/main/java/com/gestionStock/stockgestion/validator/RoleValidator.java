@@ -9,7 +9,7 @@ import java.util.List;
 
 public class RoleValidator {
 
-    public List<String> validate(RoleRequest roleRequest){
+    public static List<String> validate(RoleRequest roleRequest){
         List<String> errors= new ArrayList<>();
 
         if(roleRequest == null || !StringUtils.hasLength(roleRequest.getName())){

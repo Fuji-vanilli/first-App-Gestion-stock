@@ -11,7 +11,7 @@ import java.util.List;
 
 public class ArticleValidator {
 
-    public List<String> validate(ArticleRequest articleRequest){
+    public static List<String> validate(ArticleRequest articleRequest){
         List<String> errors= new ArrayList<>();
 
         if(articleRequest == null || !StringUtils.hasLength(articleRequest.getCodeArticle())){

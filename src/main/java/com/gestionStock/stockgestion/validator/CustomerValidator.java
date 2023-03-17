@@ -9,7 +9,7 @@ import java.util.List;
 
 public class CustomerValidator {
 
-    public List<String> validate(CustomerRequest customerRequest){
+    public static List<String> validate(CustomerRequest customerRequest){
         List<String> errors= new ArrayList<>();
 
         if(customerRequest == null || (!StringUtils.hasLength(customerRequest.getFirstName()) && !StringUtils.hasLength(customerRequest.getLastName()))){

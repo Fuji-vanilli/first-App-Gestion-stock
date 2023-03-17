@@ -8,7 +8,7 @@ import java.util.List;
 
 public class UserValidator {
 
-    public List<String> validate(UserRequest userRequest){
+    public static List<String> validate(UserRequest userRequest){
         List<String> errors= new ArrayList<>();
 
         if(userRequest == null || !StringUtils.hasLength(userRequest.getEmail())){

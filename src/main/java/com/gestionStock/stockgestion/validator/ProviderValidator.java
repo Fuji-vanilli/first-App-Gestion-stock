@@ -8,7 +8,7 @@ import java.util.List;
 
 public class ProviderValidator {
 
-    public List<String> validate(ProviderRequest providerRequest){
+    public static List<String> validate(ProviderRequest providerRequest){
         List<String> errors= new ArrayList<>();
 
         if(providerRequest == null || (!StringUtils.hasLength(providerRequest.getEmail()) && !StringUtils.hasLength(providerRequest.getName()))){

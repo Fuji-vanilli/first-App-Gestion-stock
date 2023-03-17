@@ -10,7 +10,7 @@ import java.util.List;
 
 public class CategoryValidator {
 
-    public List<String> validate(CategoryRequest categoryRequest){
+    public static List<String> validate(CategoryRequest categoryRequest){
         List<String> errors= new ArrayList<>();
 
         if(categoryRequest == null || !StringUtils.hasLength(categoryRequest.getCode())){

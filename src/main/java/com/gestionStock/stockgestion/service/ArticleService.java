@@ -9,5 +9,8 @@ import java.util.List;
 public interface ArticleService {
     ArticleResponse create(ArticleRequest articleRequest);
     ArticleResponse getById(String id);
+    ArticleResponse getByCodeArticle(String code);
     List<ArticleResponse> getAll();
+    boolean deleteById(String id);
+
 }
