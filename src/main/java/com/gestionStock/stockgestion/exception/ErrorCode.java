@@ -39,7 +39,10 @@ public enum ErrorCode {
     ROLES_NOT_VALID(30001),
 
     USER_NOT_FOUND(40000),
-    USER_NOT_VALID(40001);
+    USER_NOT_VALID(40001),
+
+    SALE_NOT_FOUND(50001),
+    SALE_NOT_VALID(6001);
     private int code;
 
     ErrorCode(int code){

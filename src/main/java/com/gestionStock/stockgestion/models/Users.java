@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.sql.Date;
+import java.time.Instant;
 import java.util.List;
 
 @Entity
@@ -21,7 +22,7 @@ public class Users extends AbstractEntity{
 
     private String lastname;
 
-    private Date dateOfBirth;
+    private Instant dateOfBirth;
 
     private String email;
 
