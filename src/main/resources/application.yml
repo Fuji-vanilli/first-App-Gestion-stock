@@ -17,5 +17,7 @@ spring:
 flickr:
   apiKeys: cedc9549140db37eb59b27d51e2782d4
   apiSecret: 18fde413460fb56f
+  appKey: 72157720876605018-1da57e190c205799
+  appSecret: 2b1f1005a0a141b2
 
 

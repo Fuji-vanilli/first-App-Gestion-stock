@@ -16,8 +16,10 @@ import java.util.List;
 @NoArgsConstructor
 public class CommandCustomerRequest {
 
+    private String code;
+
     private CustomerResponse customer;
 
-    private List<LineCommandCustomerResponse> ligneCommandCustomer;
+    private List<LineCommandCustomerRequest> ligneCommandCustomer;
 
 }

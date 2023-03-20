@@ -17,6 +17,8 @@ public class LineCommandProviderResponse {
 
     private BigDecimal quantity;
 
+    private BigDecimal priceUnit;
+
     private ArticleResponse article;
 
     private CommandProviderResponse commandProvider;

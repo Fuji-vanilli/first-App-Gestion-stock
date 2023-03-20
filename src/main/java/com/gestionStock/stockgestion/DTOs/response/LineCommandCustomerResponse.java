@@ -17,6 +17,8 @@ public class LineCommandCustomerResponse {
 
     private BigDecimal quantity;
 
+    private BigDecimal priceUnit;
+
     private ArticleResponse article;
 
     private CommandCustomerResponse commandClient;

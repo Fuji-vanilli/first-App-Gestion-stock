@@ -19,8 +19,8 @@ public class CommandProviderRequest{
 
     private String code;
 
-    private ProviderResponse fournisseur;
+    private ProviderResponse provider;
 
-    private List<LineCommandProviderResponse> lineCommandProviderResponse;
+    private List<LineCommandProviderRequest> lineCommandProviderRequest;
 
 }

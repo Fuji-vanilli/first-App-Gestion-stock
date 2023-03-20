@@ -19,5 +19,5 @@ public class SaleRequest {
 
     private String comment;
 
-    private List<LineSaleResponse> lineSale;
+    private List<LineSaleRequest> lineSale;
 }

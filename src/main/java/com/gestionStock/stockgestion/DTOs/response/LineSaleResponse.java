@@ -17,6 +17,8 @@ public class LineSaleResponse {
 
     private BigDecimal quantity;
 
+    private BigDecimal priceUnit;
+
     private ArticleResponse article;
 
     private SaleResponse sale;
